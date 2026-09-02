@@ -97,7 +97,42 @@
     "simulation": {
         "current_avg_days": 8.61278229487525,
         "projected_avg_days": 2.267311451299574,
+        "projected_avg_ci_lower": 2.1836016846727007,
+        "projected_avg_ci_upper": 2.367885520872578,
         "absolute_days_saved_per_case": 6.345470843575677,
+        "days_saved_ci_lower": 6.244896774002672,
+        "days_saved_ci_upper": 6.42918061020255,
         "pct_reduction": 73.67504049593055
+    },
+    "predictive_model": {
+        "checkpoint": "Immediately after first Document Check",
+        "cases_evaluated": 7367,
+        "logreg": {
+            "auc": 0.5449095298548599,
+            "precision": 0.6440677966101694,
+            "recall": 0.1713641488162345
+        },
+        "random_forest": {
+            "auc": 0.5094090487430594,
+            "precision": 0.6062355658198614,
+            "recall": 0.5918827508455468
+        },
+        "business_feature_importance": [
+            {
+                "feature": "elapsed_time_days",
+                "odds_ratio": 0.9788651925238426,
+                "interpretation": "For every 1 standard deviation increase in elapsed_time_days, the odds of breaching the SLA are multiplied by 0.98."
+            },
+            {
+                "feature": "events_so_far",
+                "odds_ratio": 0.9824162663087547,
+                "interpretation": "For every 1 standard deviation increase in events_so_far, the odds of breaching the SLA are multiplied by 0.98."
+            },
+            {
+                "feature": "is_weekend_submit",
+                "odds_ratio": 1.0298509285996043,
+                "interpretation": "For every 1 standard deviation increase in is_weekend_submit, the odds of breaching the SLA are multiplied by 1.03."
+            }
+        ]
     }
 }

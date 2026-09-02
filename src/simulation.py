@@ -77,12 +77,19 @@ def run_simulation():
     projected_avg = np.mean(simulated_averages)
     projected_median = np.mean(simulated_medians)
     
+    # 95% Confidence Interval for the simulated average
+    ci_lower = np.percentile(simulated_averages, 2.5)
+    ci_upper = np.percentile(simulated_averages, 97.5)
+    
     days_saved_avg = current_avg - projected_avg
+    days_saved_ci_lower = current_avg - ci_upper
+    days_saved_ci_upper = current_avg - ci_lower
+    
     pct_reduction = (days_saved_avg / current_avg) * 100
     
-    print(f"Projected New Avg E2E: {projected_avg:.2f} days")
+    print(f"Projected New Avg E2E: {projected_avg:.2f} days (95% CI: [{ci_lower:.2f}, {ci_upper:.2f}])")
     print(f"Projected New Median E2E: {projected_median:.2f} days")
-    print(f"Absolute Days Saved per Case: {days_saved_avg:.2f} days")
+    print(f"Absolute Days Saved per Case: {days_saved_avg:.2f} days (95% CI: [{days_saved_ci_lower:.2f}, {days_saved_ci_upper:.2f}])")
     print(f"Relative Cycle Time Reduction: {pct_reduction:.1f}%")
     
     # Save Metrics
@@ -90,7 +97,11 @@ def run_simulation():
         "simulation": {
             "current_avg_days": float(current_avg),
             "projected_avg_days": float(projected_avg),
+            "projected_avg_ci_lower": float(ci_lower),
+            "projected_avg_ci_upper": float(ci_upper),
             "absolute_days_saved_per_case": float(days_saved_avg),
+            "days_saved_ci_lower": float(days_saved_ci_lower),
+            "days_saved_ci_upper": float(days_saved_ci_upper),
             "pct_reduction": float(pct_reduction)
         }
     }
