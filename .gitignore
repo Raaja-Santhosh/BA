@@ -1,0 +1,8 @@
+# Data files
+data/
+outputs/figures/
+__pycache__/
+.env
+.venv
+venv/
+*.pyc

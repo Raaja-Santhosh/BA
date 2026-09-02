@@ -1,0 +1,240 @@
+{
+    "nodes": [
+        "Submitted",
+        "Underwriting",
+        "Document Check",
+        "Manager Review",
+        "Cancelled",
+        "Rejected",
+        "Other"
+    ],
+    "edges": [
+        {
+            "source": "Cancelled",
+            "target": "Cancelled",
+            "frequency": 1631,
+            "mean_duration_sec": 6.437768240343347e-05,
+            "label": "1631 cases\\n0h"
+        },
+        {
+            "source": "Cancelled",
+            "target": "Document Check",
+            "frequency": 750,
+            "mean_duration_sec": 217.80903733333332,
+            "label": "750 cases\\n0h"
+        },
+        {
+            "source": "Cancelled",
+            "target": "Manager Review",
+            "frequency": 979,
+            "mean_duration_sec": 168.13281818181818,
+            "label": "979 cases\\n0h"
+        },
+        {
+            "source": "Cancelled",
+            "target": "Other",
+            "frequency": 1194,
+            "mean_duration_sec": 0.3713458961474037,
+            "label": "1194 cases\\n0h"
+        },
+        {
+            "source": "Cancelled",
+            "target": "Underwriting",
+            "frequency": 974,
+            "mean_duration_sec": 3.1967371663244353,
+            "label": "974 cases\\n0h"
+        },
+        {
+            "source": "Document Check",
+            "target": "Cancelled",
+            "frequency": 1589,
+            "mean_duration_sec": 116134.25122970421,
+            "label": "1589 cases\\n1d 8h"
+        },
+        {
+            "source": "Document Check",
+            "target": "Document Check",
+            "frequency": 15412,
+            "mean_duration_sec": 105739.0586805087,
+            "label": "15412 cases\\n1d 5h"
+        },
+        {
+            "source": "Document Check",
+            "target": "Manager Review",
+            "frequency": 3554,
+            "mean_duration_sec": 268255.1822647721,
+            "label": "3554 cases\\n3d 2h"
+        },
+        {
+            "source": "Document Check",
+            "target": "Other",
+            "frequency": 3474,
+            "mean_duration_sec": 81807.76120092113,
+            "label": "3474 cases\\n22h"
+        },
+        {
+            "source": "Document Check",
+            "target": "Rejected",
+            "frequency": 845,
+            "mean_duration_sec": 40481.88876331361,
+            "label": "845 cases\\n11h"
+        },
+        {
+            "source": "Document Check",
+            "target": "Underwriting",
+            "frequency": 4521,
+            "mean_duration_sec": 22421.34093497014,
+            "label": "4521 cases\\n6h"
+        },
+        {
+            "source": "Manager Review",
+            "target": "Cancelled",
+            "frequency": 1865,
+            "mean_duration_sec": 203212.4596632708,
+            "label": "1865 cases\\n2d 8h"
+        },
+        {
+            "source": "Manager Review",
+            "target": "Manager Review",
+            "frequency": 17561,
+            "mean_duration_sec": 211179.5706154547,
+            "label": "17561 cases\\n2d 10h"
+        },
+        {
+            "source": "Manager Review",
+            "target": "Other",
+            "frequency": 8793,
+            "mean_duration_sec": 171645.90838053,
+            "label": "8793 cases\\n1d 23h"
+        },
+        {
+            "source": "Manager Review",
+            "target": "Rejected",
+            "frequency": 199,
+            "mean_duration_sec": 230864.19410050253,
+            "label": "199 cases\\n2d 16h"
+        },
+        {
+            "source": "Other",
+            "target": "Cancelled",
+            "frequency": 1331,
+            "mean_duration_sec": 10966.989323065365,
+            "label": "1331 cases\\n3h"
+        },
+        {
+            "source": "Other",
+            "target": "Document Check",
+            "frequency": 2007,
+            "mean_duration_sec": 14006.510816641754,
+            "label": "2007 cases\\n3h"
+        },
+        {
+            "source": "Other",
+            "target": "Manager Review",
+            "frequency": 5980,
+            "mean_duration_sec": 2917.824883277592,
+            "label": "5980 cases\\n0h"
+        },
+        {
+            "source": "Other",
+            "target": "Other",
+            "frequency": 16256,
+            "mean_duration_sec": 44658.051304318404,
+            "label": "16256 cases\\n12h"
+        },
+        {
+            "source": "Other",
+            "target": "Rejected",
+            "frequency": 1265,
+            "mean_duration_sec": 10391.159992094863,
+            "label": "1265 cases\\n2h"
+        },
+        {
+            "source": "Other",
+            "target": "Underwriting",
+            "frequency": 6667,
+            "mean_duration_sec": 842.4397153142344,
+            "label": "6667 cases\\n0h"
+        },
+        {
+            "source": "Rejected",
+            "target": "Document Check",
+            "frequency": 1113,
+            "mean_duration_sec": 3.930766397124888,
+            "label": "1113 cases\\n0h"
+        },
+        {
+            "source": "Rejected",
+            "target": "Other",
+            "frequency": 3072,
+            "mean_duration_sec": 3.3582571614583334,
+            "label": "3072 cases\\n0h"
+        },
+        {
+            "source": "Submitted",
+            "target": "Document Check",
+            "frequency": 6959,
+            "mean_duration_sec": 5861.123407960913,
+            "label": "6959 cases\\n1h"
+        },
+        {
+            "source": "Submitted",
+            "target": "Other",
+            "frequency": 827,
+            "mean_duration_sec": 31182.138216444982,
+            "label": "827 cases\\n8h"
+        },
+        {
+            "source": "Submitted",
+            "target": "Rejected",
+            "frequency": 5301,
+            "mean_duration_sec": 6601.173919260517,
+            "label": "5301 cases\\n1h"
+        },
+        {
+            "source": "Submitted",
+            "target": "Submitted",
+            "frequency": 13087,
+            "mean_duration_sec": 0.581672728662031,
+            "label": "13087 cases\\n0h"
+        },
+        {
+            "source": "Underwriting",
+            "target": "Document Check",
+            "frequency": 5089,
+            "mean_duration_sec": 11.762935547258794,
+            "label": "5089 cases\\n0h"
+        },
+        {
+            "source": "Underwriting",
+            "target": "Manager Review",
+            "frequency": 1619,
+            "mean_duration_sec": 22.97053798641137,
+            "label": "1619 cases\\n0h"
+        },
+        {
+            "source": "Underwriting",
+            "target": "Other",
+            "frequency": 5383,
+            "mean_duration_sec": 116.5681599479844,
+            "label": "5383 cases\\n0h"
+        },
+        {
+            "source": "Underwriting",
+            "target": "Underwriting",
+            "frequency": 12026,
+            "mean_duration_sec": 40.01578737734908,
+            "label": "12026 cases\\n0h"
+        }
+    ],
+    "start_activities": [
+        "Submitted"
+    ],
+    "end_activities": [
+        "Other",
+        "Rejected",
+        "Document Check",
+        "Cancelled",
+        "Manager Review"
+    ]
+}

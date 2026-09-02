@@ -1,0 +1,52 @@
+[
+    {
+        "path": "Submitted -> Submitted -> Rejected",
+        "frequency": 5719,
+        "type": "Skipped Stage(s)"
+    },
+    {
+        "path": "Submitted -> Submitted -> Document Check -> Rejected -> Document Check",
+        "frequency": 407,
+        "type": "Repeated Stage(s) / Rework Loop"
+    },
+    {
+        "path": "Submitted -> Submitted -> Document Check -> Document Check -> Rejected -> Document Check",
+        "frequency": 244,
+        "type": "Repeated Stage(s) / Rework Loop"
+    },
+    {
+        "path": "Submitted -> Submitted -> Document Check -> Underwriting -> Underwriting -> Underwriting -> Underwriting -> Document Check -> Manager Review -> Manager Review -> Manager Review -> Manager Review -> Manager Review",
+        "frequency": 243,
+        "type": "Repeated Stage(s) / Rework Loop"
+    },
+    {
+        "path": "Submitted -> Submitted -> Document Check -> Underwriting -> Underwriting -> Underwriting -> Underwriting -> Document Check -> Manager Review -> Manager Review -> Manager Review -> Manager Review",
+        "frequency": 233,
+        "type": "Repeated Stage(s) / Rework Loop"
+    },
+    {
+        "path": "Submitted -> Submitted -> Document Check -> Cancelled -> Document Check",
+        "frequency": 194,
+        "type": "Repeated Stage(s) / Rework Loop"
+    },
+    {
+        "path": "Submitted -> Submitted -> Document Check -> Underwriting -> Underwriting -> Underwriting -> Underwriting -> Document Check -> Manager Review -> Manager Review -> Manager Review -> Manager Review -> Manager Review -> Manager Review",
+        "frequency": 164,
+        "type": "Repeated Stage(s) / Rework Loop"
+    },
+    {
+        "path": "Submitted -> Submitted -> Document Check -> Document Check -> Document Check -> Rejected -> Document Check",
+        "frequency": 132,
+        "type": "Repeated Stage(s) / Rework Loop"
+    },
+    {
+        "path": "Submitted -> Submitted -> Document Check -> Document Check -> Cancelled -> Document Check",
+        "frequency": 126,
+        "type": "Repeated Stage(s) / Rework Loop"
+    },
+    {
+        "path": "Submitted -> Submitted -> Document Check -> Document Check -> Underwriting -> Underwriting -> Underwriting -> Underwriting -> Document Check -> Manager Review -> Manager Review -> Manager Review -> Manager Review",
+        "frequency": 105,
+        "type": "Repeated Stage(s) / Rework Loop"
+    }
+]

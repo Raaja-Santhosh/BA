@@ -1,0 +1,103 @@
+{
+    "data_quality": {
+        "initial_cases": 13087,
+        "final_cases": 13087,
+        "initial_events": 262200,
+        "final_events": 164506,
+        "dropped_cases_pct": 0.0,
+        "dropped_events_pct": 37.25934401220442,
+        "date_range_start": "2011-09-30 22:38:44.546000+00:00",
+        "date_range_end": "2012-03-14 15:04:54.681000+00:00"
+    },
+    "discovery": {
+        "num_places_in_inductive_net": 29,
+        "num_transitions_in_inductive_net": 38,
+        "num_arcs_in_inductive_net": 84,
+        "edges_in_dfg_above_threshold": 31,
+        "total_dfg_edges_raw": 35
+    },
+    "conformance": {
+        "overall_fitness_score": 0.5384247041141237,
+        "perfectly_conformant_cases": 0,
+        "perfectly_conformant_pct": 0.0,
+        "total_variants": 1442,
+        "non_conformant_variants": 1442
+    },
+    "cycle_time": {
+        "e2e_mean_days": 8.61278229487525,
+        "e2e_median_days": 0.8085351157407407,
+        "e2e_p90_days": 30.459166217592593,
+        "e2e_sla_breach_pct": 33.88859173225338,
+        "stages": {
+            "Document Check": {
+                "mean_days": 2.6696995264558794,
+                "median_days": 0.09975559027777776,
+                "p90_days": 5.551076020833376,
+                "sla_breach_pct": 15.745893850956971,
+                "share_of_total_delay_pct": 17.448957393506237
+            },
+            "Underwriting": {
+                "mean_days": 0.24327008548923945,
+                "median_days": 0.03444579861111111,
+                "p90_days": 0.7041009212962963,
+                "sla_breach_pct": 0.5867396831605711,
+                "share_of_total_delay_pct": 1.1035218287820407
+            },
+            "Manager Review": {
+                "mean_days": 10.808521766391717,
+                "median_days": 7.873532962962964,
+                "p90_days": 30.572238958333333,
+                "sla_breach_pct": 72.56036719217721,
+                "share_of_total_delay_pct": 48.05152021865855
+            }
+        },
+        "headline_bottleneck": {
+            "stage": "Manager Review",
+            "share_of_delay_pct": 48.05152021865855
+        }
+    },
+    "rework": {
+        "rework_rate_pct": 100.0,
+        "added_cycle_time_days": 0.0,
+        "e2e_no_rework_days": NaN,
+        "e2e_rework_days": 8.61278229487525,
+        "top_loop_pairs": [
+            {
+                "pair": "Manager Review -> Manager Review",
+                "count": 17561
+            },
+            {
+                "pair": "Document Check -> Document Check",
+                "count": 15412
+            },
+            {
+                "pair": "Submitted -> Submitted",
+                "count": 13087
+            },
+            {
+                "pair": "Underwriting -> Underwriting",
+                "count": 12026
+            },
+            {
+                "pair": "Underwriting -> Document Check",
+                "count": 5089
+            }
+        ]
+    },
+    "stats": {
+        "cases_rework": 6886,
+        "cases_no_rework": 6201,
+        "mean_rework_days": 14.325047752057987,
+        "mean_no_rework_days": 2.269505414023724,
+        "mean_difference_days": 12.055542338034263,
+        "p_value": 0.0,
+        "rank_biserial_correlation": -0.8259509828621892,
+        "is_statistically_significant": true
+    },
+    "simulation": {
+        "current_avg_days": 8.61278229487525,
+        "projected_avg_days": 2.267311451299574,
+        "absolute_days_saved_per_case": 6.345470843575677,
+        "pct_reduction": 73.67504049593055
+    }
+}

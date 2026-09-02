@@ -1,0 +1,72 @@
+digraph DFG {
+	rankdir=LR size="10,8"
+	Underwriting [label=Underwriting fillcolor="#EAEAEA" fontname=Helvetica shape=box style=filled]
+	Cancelled [label=Cancelled fillcolor="#FFCC80" fontname=Helvetica shape=box style="filled,bold"]
+	"Manager Review" [label="Manager Review" fillcolor="#FFCC80" fontname=Helvetica shape=box style="filled,bold"]
+	Other [label=Other fillcolor="#FFCC80" fontname=Helvetica shape=box style="filled,bold"]
+	"Document Check" [label="Document Check" fillcolor="#FFCC80" fontname=Helvetica shape=box style="filled,bold"]
+	Submitted [label=Submitted fillcolor="#C5E1A5" fontname=Helvetica shape=box style="filled,bold"]
+	Rejected [label=Rejected fillcolor="#FFCC80" fontname=Helvetica shape=box style="filled,bold"]
+	Cancelled -> Cancelled [label="1631 cases
+0h" color="#000000" fontname=Helvetica fontsize=10 penwidth=1.0]
+	Cancelled -> "Document Check" [label="750 cases
+0h" color="#000000" fontname=Helvetica fontsize=10 penwidth=1.0]
+	Cancelled -> "Manager Review" [label="979 cases
+0h" color="#000000" fontname=Helvetica fontsize=10 penwidth=1.0]
+	Cancelled -> Other [label="1194 cases
+0h" color="#000000" fontname=Helvetica fontsize=10 penwidth=1.0]
+	Cancelled -> Underwriting [label="974 cases
+0h" color="#000000" fontname=Helvetica fontsize=10 penwidth=1.0]
+	"Document Check" -> Cancelled [label="1589 cases
+1d 8h" color="#000000" fontname=Helvetica fontsize=10 penwidth=1.0]
+	"Document Check" -> "Document Check" [label="15412 cases
+1d 5h" color="#000000" fontname=Helvetica fontsize=10 penwidth=4.388132794260008]
+	"Document Check" -> "Manager Review" [label="3554 cases
+3d 2h" color="#D32F2F" fontname=Helvetica fontsize=10 penwidth=1.011901372359205]
+	"Document Check" -> Other [label="3474 cases
+22h" color="#000000" fontname=Helvetica fontsize=10 penwidth=1.0]
+	"Document Check" -> Rejected [label="845 cases
+11h" color="#000000" fontname=Helvetica fontsize=10 penwidth=1.0]
+	"Document Check" -> Underwriting [label="4521 cases
+6h" color="#000000" fontname=Helvetica fontsize=10 penwidth=1.2872273788508626]
+	"Manager Review" -> Cancelled [label="1865 cases
+2d 8h" color="#D32F2F" fontname=Helvetica fontsize=10 penwidth=1.0]
+	"Manager Review" -> "Manager Review" [label="17561 cases
+2d 10h" color="#D32F2F" fontname=Helvetica fontsize=10 penwidth=5.0]
+	"Manager Review" -> Other [label="8793 cases
+1d 23h" color="#000000" fontname=Helvetica fontsize=10 penwidth=2.5035590228346907]
+	"Manager Review" -> Rejected [label="199 cases
+2d 16h" color="#D32F2F" fontname=Helvetica fontsize=10 penwidth=1.0]
+	Other -> Cancelled [label="1331 cases
+3h" color="#000000" fontname=Helvetica fontsize=10 penwidth=1.0]
+	Other -> "Document Check" [label="2007 cases
+3h" color="#000000" fontname=Helvetica fontsize=10 penwidth=1.0]
+	Other -> "Manager Review" [label="5980 cases
+0h" color="#000000" fontname=Helvetica fontsize=10 penwidth=1.702636524115939]
+	Other -> Other [label="16256 cases
+12h" color="#000000" fontname=Helvetica fontsize=10 penwidth=4.628438016058311]
+	Other -> Rejected [label="1265 cases
+2h" color="#000000" fontname=Helvetica fontsize=10 penwidth=1.0]
+	Other -> Underwriting [label="6667 cases
+0h" color="#000000" fontname=Helvetica fontsize=10 penwidth=1.8982404191105289]
+	Rejected -> "Document Check" [label="1113 cases
+0h" color="#000000" fontname=Helvetica fontsize=10 penwidth=1.0]
+	Rejected -> Other [label="3072 cases
+0h" color="#000000" fontname=Helvetica fontsize=10 penwidth=1.0]
+	Submitted -> "Document Check" [label="6959 cases
+1h" color="#000000" fontname=Helvetica fontsize=10 penwidth=1.9813791925288993]
+	Submitted -> Other [label="827 cases
+8h" color="#000000" fontname=Helvetica fontsize=10 penwidth=1.0]
+	Submitted -> Rejected [label="5301 cases
+1h" color="#000000" fontname=Helvetica fontsize=10 penwidth=1.5093104037355505]
+	Submitted -> Submitted [label="13087 cases
+0h" color="#000000" fontname=Helvetica fontsize=10 penwidth=3.7261545470075736]
+	Underwriting -> "Document Check" [label="5089 cases
+0h" color="#000000" fontname=Helvetica fontsize=10 penwidth=1.4489493764591992]
+	Underwriting -> "Manager Review" [label="1619 cases
+0h" color="#000000" fontname=Helvetica fontsize=10 penwidth=1.0]
+	Underwriting -> Other [label="5383 cases
+0h" color="#000000" fontname=Helvetica fontsize=10 penwidth=1.5326575935311202]
+	Underwriting -> Underwriting [label="12026 cases
+0h" color="#000000" fontname=Helvetica fontsize=10 penwidth=3.424064688799043]
+}
