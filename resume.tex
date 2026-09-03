@@ -22,20 +22,21 @@
 
 % ---------- PAGE LAYOUT ----------
 \usepackage[
-  left=0.4in,
-  right=0.4in,
-  top=0.25in,
-  bottom=0.25in
+  left=0.42in,
+  right=0.42in,
+  top=0.35in,
+  bottom=0.35in
 ]{geometry}
 
-\linespread{0.96}
+% Clean, readable typography
+\linespread{1.08}
 \urlstyle{same}
 \raggedbottom
 
 % ---------- SECTION FORMAT ----------
 \titleformat{\section}{
-  \vspace{-5pt}\bfseries\raggedright\normalsize
-}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+  \vspace{3pt}\bfseries\raggedright\normalsize
+}{}{0em}{}[\color{black}\titlerule \vspace{3pt}]
 
 % ---------- RESUME COMMANDS ----------
 
@@ -47,29 +48,29 @@
   \begin{itemize}[
     leftmargin=0in,
     label={},
-    itemsep=2pt,
-    topsep=1pt,
+    itemsep=4pt,
+    topsep=2pt,
     parsep=0pt
   ]
 }
 
 \newcommand{\resumeOuterListEnd}{
-  \end{itemize}\vspace{-4pt}
+  \end{itemize}\vspace{2pt}
 }
 
 \newcommand{\resumeItemListStart}{
   \begin{itemize}[
-    leftmargin=0.15in,
+    leftmargin=0.18in,
     label=\tiny$\bullet$,
-    itemsep=1.5pt,
+    itemsep=2.5pt,
     parsep=0pt,
-    topsep=2pt,
+    topsep=2.5pt,
     partopsep=0pt
   ]
 }
 
 \newcommand{\resumeItemListEnd}{
-  \end{itemize}\vspace{-3pt}
+  \end{itemize}\vspace{2pt}
 }
 
 \newcommand{\resumeSubheading}[4]{
@@ -79,7 +80,7 @@
     }
       \textbf{#1} & \small #2 \\
       \textit{\small#3} & \textit{\small #4}
-    \end{tabular*}\vspace{-4pt}
+    \end{tabular*}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
@@ -88,7 +89,7 @@
       l@{\extracolsep{\fill}}r
     }
       \small\textbf{#1} & \textbf{\small #2}
-    \end{tabular*}\vspace{-4pt}
+    \end{tabular*}
 }
 
 % ============================================================
@@ -99,7 +100,7 @@
 
 % ---------- HEADER ----------
 \begin{center}
-    {\Large \textbf{S M Raaja Santhosh}} \\ \vspace{2pt}
+    {\Large \textbf{S M Raaja Santhosh}} \\ \vspace{4pt}
     \faMapMarker* \ Chennai, India \quad
     \faEnvelope \ \href{mailto:raajasanthosh2005@gmail.com}
     {raajasanthosh2005@gmail.com} \quad
@@ -107,6 +108,8 @@
     \faGithub \ \href{https://github.com/Raaja-Santhosh}
     {github.com/Raaja-Santhosh}
 \end{center}
+
+\vspace{1pt}
 
 % ---------- EDUCATION ----------
 \section{EDUCATION}
@@ -118,8 +121,6 @@
   {B.Tech Electronics and Computer Engineering;
   \quad CGPA: \textbf{8.19 / 10.0}}{2023--2027}
 
-\vspace{1pt}
-
 \resumeItemListStart
   \resumeItem{
     Relevant Coursework: Data Structures \& Algorithms,
@@ -129,7 +130,7 @@
   }
 \resumeItemListEnd
 
-\vspace{1pt}
+\vspace{2pt}
 
 \resumeSubheading
   {Higher Secondary Education}{Tamil Nadu}
@@ -168,28 +169,28 @@
 % ---------- SKILLS ----------
 \section{SKILLS}
 
-\vspace{1pt}
+\vspace{2pt}
 
 \noindent\small{
 \textbf{Programming:}
 Python, C, C++, Java, SQL
 }
 
-\vspace{1pt}
+\vspace{2pt}
 
 \noindent\small{
 \textbf{Web \& Backend:}
 FastAPI, MongoDB, PostgreSQL, Redis, REST APIs
 }
 
-\vspace{1pt}
+\vspace{2pt}
 
 \noindent\small{
 \textbf{ML / AI:}
 TensorFlow, scikit-learn, Pandas, NumPy, pm4py
 }
 
-\vspace{1pt}
+\vspace{2pt}
 
 \noindent\small{
 \textbf{Tools \& DevOps:}
@@ -235,6 +236,8 @@ Git, GitHub, Docker, WebSockets, LangGraph, Streamlit
 
 \resumeItemListEnd
 
+\vspace{2pt}
+
 % ---------- PROCESS MINING ----------
 \resumeProjectHeading
   {
@@ -264,6 +267,8 @@ Git, GitHub, Docker, WebSockets, LangGraph, Streamlit
   }
 
 \resumeItemListEnd
+
+\vspace{2pt}
 
 % ---------- MULTI-AGENT ----------
 \resumeProjectHeading
@@ -321,7 +326,7 @@ Git, GitHub, Docker, WebSockets, LangGraph, Streamlit
   }
 \resumeItemListEnd
 
-\vspace{1pt}
+\vspace{2pt}
 
 \resumeProjectHeading
   {Generative AI Job Simulation --- Forage}
