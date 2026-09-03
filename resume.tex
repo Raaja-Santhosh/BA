@@ -1,0 +1,340 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{microtype}
+
+\usepackage{ifpdf}
+\ifpdf
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
+
+% ---------- PAGE LAYOUT ----------
+\usepackage[
+  left=0.4in,
+  right=0.4in,
+  top=0.25in,
+  bottom=0.25in
+]{geometry}
+
+\linespread{0.96}
+\urlstyle{same}
+\raggedbottom
+
+% ---------- SECTION FORMAT ----------
+\titleformat{\section}{
+  \vspace{-5pt}\bfseries\raggedright\normalsize
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% ---------- RESUME COMMANDS ----------
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1}
+}
+
+\newcommand{\resumeOuterListStart}{
+  \begin{itemize}[
+    leftmargin=0in,
+    label={},
+    itemsep=2pt,
+    topsep=1pt,
+    parsep=0pt
+  ]
+}
+
+\newcommand{\resumeOuterListEnd}{
+  \end{itemize}\vspace{-4pt}
+}
+
+\newcommand{\resumeItemListStart}{
+  \begin{itemize}[
+    leftmargin=0.15in,
+    label=\tiny$\bullet$,
+    itemsep=1.5pt,
+    parsep=0pt,
+    topsep=2pt,
+    partopsep=0pt
+  ]
+}
+
+\newcommand{\resumeItemListEnd}{
+  \end{itemize}\vspace{-3pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{0.98\textwidth}[t]{
+      l@{\extracolsep{\fill}}r
+    }
+      \textbf{#1} & \small #2 \\
+      \textit{\small#3} & \textit{\small #4}
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{0.98\textwidth}[t]{
+      l@{\extracolsep{\fill}}r
+    }
+      \small\textbf{#1} & \textbf{\small #2}
+    \end{tabular*}\vspace{-4pt}
+}
+
+% ============================================================
+% DOCUMENT
+% ============================================================
+
+\begin{document}
+
+% ---------- HEADER ----------
+\begin{center}
+    {\Large \textbf{S M Raaja Santhosh}} \\ \vspace{2pt}
+    \faMapMarker* \ Chennai, India \quad
+    \faEnvelope \ \href{mailto:raajasanthosh2005@gmail.com}
+    {raajasanthosh2005@gmail.com} \quad
+    \faPhone \ +91 9845041095 \quad
+    \faGithub \ \href{https://github.com/Raaja-Santhosh}
+    {github.com/Raaja-Santhosh}
+\end{center}
+
+% ---------- EDUCATION ----------
+\section{EDUCATION}
+
+\resumeOuterListStart
+
+\resumeSubheading
+  {VIT Chennai}{Chennai}
+  {B.Tech Electronics and Computer Engineering;
+  \quad CGPA: \textbf{8.19 / 10.0}}{2023--2027}
+
+\vspace{1pt}
+
+\resumeItemListStart
+  \resumeItem{
+    Relevant Coursework: Data Structures \& Algorithms,
+    Object-Oriented Programming, Machine Learning,
+    Database Management Systems, Computer Architecture,
+    Operating Systems
+  }
+\resumeItemListEnd
+
+\vspace{1pt}
+
+\resumeSubheading
+  {Higher Secondary Education}{Tamil Nadu}
+  {Class XII -- 87.4\% \quad|\quad Class X -- 89\%}{2021--2023}
+
+\resumeOuterListEnd
+
+% ---------- EXPERIENCE ----------
+\section{EXPERIENCE}
+
+\resumeOuterListStart
+
+\resumeSubheading
+  {Team Namo Nirvana}{Chennai, India}
+  {Programming Team Member}{}
+
+\resumeItemListStart
+
+  \resumeItem{
+    Part of the programming sector within \textbf{Team Namo Nirvana},
+    a multi-disciplinary team spanning several technical domains,
+    representing the team at the \textbf{Micromouse} competition
+    held at \textbf{Anna University}.
+  }
+
+  \resumeItem{
+    Contributed to the autonomous robot's \textbf{maze-solving algorithm}
+    and \textbf{sensor-based navigation} logic, enabling it to map and
+    traverse the maze independently.
+  }
+
+\resumeItemListEnd
+
+\resumeOuterListEnd
+
+% ---------- SKILLS ----------
+\section{SKILLS}
+
+\vspace{1pt}
+
+\noindent\small{
+\textbf{Programming:}
+Python, C, C++, Java, SQL
+}
+
+\vspace{1pt}
+
+\noindent\small{
+\textbf{Web \& Backend:}
+FastAPI, MongoDB, PostgreSQL, Redis, REST APIs
+}
+
+\vspace{1pt}
+
+\noindent\small{
+\textbf{ML / AI:}
+TensorFlow, scikit-learn, Pandas, NumPy, pm4py
+}
+
+\vspace{1pt}
+
+\noindent\small{
+\textbf{Tools \& DevOps:}
+Git, GitHub, Docker, WebSockets, LangGraph, Streamlit
+}
+
+\vspace{2pt}
+
+% ---------- PROJECTS ----------
+\section{PROJECTS}
+
+\resumeOuterListStart
+
+% ---------- ATMOSIQ ----------
+\resumeProjectHeading
+  {
+    AtmosIQ: Hybrid LSTM AQI Forecasting System
+    \href{
+      https://github.com/Raaja-Santhosh/Hybrid-LSTM-AQI-Forcasting
+    }{\faGithub}
+  }
+  {Python, TensorFlow, FastAPI, MongoDB}
+
+\resumeItemListStart
+
+  \resumeItem{
+    Built an end-to-end Air Quality Intelligence platform using a
+    \textbf{Hybrid LSTM} network for 24/48/72-hour
+    multi-horizon AQI forecasting across real-world pollutant telemetry.
+  }
+
+  \resumeItem{
+    Trained a \textbf{Random Forest} classifier on \textbf{330,000+}
+    records achieving \textbf{97.5\% accuracy} in health risk classification;
+    analyzed feature importance across PM2.5, NO\textsubscript{2}, O\textsubscript{3}, and CO.
+  }
+
+  \resumeItem{
+    Reduced forecast error by \textbf{14\% over ARIMA baselines}
+    using mean-reversion logic; engineered a resilient pipeline with
+    MongoDB persistence and CSV fallback ensuring zero data loss.
+  }
+
+\resumeItemListEnd
+
+% ---------- PROCESS MINING ----------
+\resumeProjectHeading
+  {
+    Loan Approval Process Mining \& Bottleneck Analysis
+    \href{https://github.com/Raaja-Santhosh/BA}{\faGithub}
+  }
+  {Python, pm4py, scikit-learn, Streamlit}
+
+\resumeItemListStart
+
+  \resumeItem{
+    Mined the ``as-is'' process from \textbf{164,000+} event logs
+    across 13,087 loan cases using \textbf{pm4py}; identified backward rework
+    loops as the primary driver behind \textbf{48\%} of total processing delays.
+  }
+
+  \resumeItem{
+    Statistically validated (Mann-Whitney U, $p < 0.0001$, Rank-Biserial $r = -0.83$)
+    that rework adds \textbf{$\sim$12 days} per case; simulated a \textbf{37--74\%}
+    cycle-time reduction via Monte Carlo sensitivity analysis.
+  }
+
+  \resumeItem{
+    Deployed an interactive \textbf{Streamlit} dashboard featuring Gantt timelines,
+    Sankey flow diagrams, and what-if simulation panels; delivered an executive
+    action plan for operations leadership.
+  }
+
+\resumeItemListEnd
+
+% ---------- MULTI-AGENT ----------
+\resumeProjectHeading
+  {Multi-Agent Workflow Automation Platform}
+  {FastAPI, LangGraph, WebSockets, PostgreSQL}
+
+\resumeItemListStart
+
+  \resumeItem{
+    Architected a full-stack multi-agent orchestration system where
+    \textbf{LangGraph} agents autonomously decompose natural language goals into
+    parallel subtasks, execute tools, and stream live traces via \textbf{WebSockets}.
+  }
+
+  \resumeItem{
+    Designed a critic/verifier agent for automated failure detection and self-correction,
+    paired with a persistent cross-session memory layer in \textbf{PostgreSQL} to retain task context.
+  }
+
+  \resumeItem{
+    Containerized with \textbf{Docker Compose} and deployed via a CI/CD pipeline;
+    reduced manual multi-step research workflows from $\sim$30 minutes to under 2 minutes.
+  }
+
+\resumeItemListEnd
+
+\resumeOuterListEnd
+
+% ---------- CERTIFICATIONS ----------
+\section{CERTIFICATIONS}
+
+\resumeOuterListStart
+
+\resumeSubheading
+  {IBM Advanced Generative AI Certificate}{}
+  {Foundation Models, LLMs, Prompt Engineering,
+   Generative AI, Responsible AI}{}
+
+\resumeOuterListEnd
+
+% ---------- EXTRACURRICULARS ----------
+\section{EXTRACURRICULARS}
+
+\resumeOuterListStart
+
+\resumeProjectHeading
+  {Data Analytics Job Simulation --- Forage}
+  {}
+
+\resumeItemListStart
+  \resumeItem{
+    Completed a virtual job simulation on \textbf{data analytics},
+    working through real-world tasks including data cleaning,
+    exploratory analysis, and deriving actionable business insights.
+  }
+\resumeItemListEnd
+
+\vspace{1pt}
+
+\resumeProjectHeading
+  {Generative AI Job Simulation --- Forage}
+  {}
+
+\resumeItemListStart
+  \resumeItem{
+    Completed a virtual job simulation on \textbf{Generative AI},
+    applying prompt engineering and LLM-based solution design to
+    solve practical business use cases.
+  }
+\resumeItemListEnd
+
+\resumeOuterListEnd
+
+\end{document}
