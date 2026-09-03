@@ -22,20 +22,21 @@
 
 % ---------- PAGE LAYOUT ----------
 \usepackage[
-  left=0.38in,
-  right=0.38in,
-  top=0.25in,
-  bottom=0.25in
+  left=0.40in,
+  right=0.40in,
+  top=0.32in,
+  bottom=0.32in
 ]{geometry}
 
-\linespread{1.02}
+% Balanced typography that fills the single page evenly
+\linespread{1.06}
 \urlstyle{same}
 \raggedbottom
 
 % ---------- SECTION FORMAT ----------
 \titleformat{\section}{
-  \vspace{-2pt}\bfseries\raggedright\normalsize
-}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+  \vspace{3pt}\bfseries\raggedright\normalsize
+}{}{0em}{}[\color{black}\titlerule \vspace{3pt}]
 
 % ---------- RESUME COMMANDS ----------
 
@@ -47,29 +48,29 @@
   \begin{itemize}[
     leftmargin=0in,
     label={},
-    itemsep=2pt,
-    topsep=1pt,
+    itemsep=4pt,
+    topsep=2pt,
     parsep=0pt
   ]
 }
 
 \newcommand{\resumeOuterListEnd}{
-  \end{itemize}\vspace{-3pt}
+  \end{itemize}\vspace{1pt}
 }
 
 \newcommand{\resumeItemListStart}{
   \begin{itemize}[
-    leftmargin=0.15in,
+    leftmargin=0.18in,
     label=\tiny$\bullet$,
-    itemsep=1.2pt,
+    itemsep=2.5pt,
     parsep=0pt,
-    topsep=1.5pt,
+    topsep=2.5pt,
     partopsep=0pt
   ]
 }
 
 \newcommand{\resumeItemListEnd}{
-  \end{itemize}\vspace{-2pt}
+  \end{itemize}\vspace{1pt}
 }
 
 \newcommand{\resumeSubheading}[4]{
@@ -79,7 +80,7 @@
     }
       \textbf{#1} & \small #2 \\
       \textit{\small#3} & \textit{\small #4}
-    \end{tabular*}\vspace{-2pt}
+    \end{tabular*}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
@@ -88,7 +89,7 @@
       l@{\extracolsep{\fill}}r
     }
       \textbf{#1} & \textbf{\small #2}
-    \end{tabular*}\vspace{-2pt}
+    \end{tabular*}
 }
 
 % ============================================================
@@ -99,7 +100,7 @@
 
 % ---------- HEADER ----------
 \begin{center}
-    {\LARGE \textbf{S M Raaja Santhosh}} \\ \vspace{2pt}
+    {\LARGE \textbf{S M Raaja Santhosh}} \\ \vspace{4pt}
     \small
     \faMapMarker* \ Chennai, India \quad
     \faEnvelope \ \href{mailto:raajasanthosh2005@gmail.com}{raajasanthosh2005@gmail.com} \quad
@@ -107,7 +108,7 @@
     \faGithub \ \href{https://github.com/Raaja-Santhosh}{github.com/Raaja-Santhosh}
 \end{center}
 
-\vspace{-4pt}
+\vspace{1pt}
 
 % ---------- EDUCATION ----------
 \section{EDUCATION}
@@ -123,6 +124,8 @@
     Relevant Coursework: Data Structures \& Algorithms, Object-Oriented Programming, Machine Learning, Database Management Systems, Computer Architecture, Operating Systems
   }
 \resumeItemListEnd
+
+\vspace{2pt}
 
 \resumeSubheading
   {Higher Secondary Education}{Tamil Nadu}
@@ -156,16 +159,16 @@
 % ---------- SKILLS ----------
 \section{SKILLS}
 
-\vspace{1pt}
+\vspace{2pt}
 
 \noindent\small{
-\textbf{Programming:} Python, C, C++, Java, SQL \\
-\textbf{Web \& Backend:} FastAPI, MongoDB, PostgreSQL, Redis, REST APIs \\
-\textbf{ML / AI:} TensorFlow, scikit-learn, Pandas, NumPy, pm4py \\
+\textbf{Programming:} Python, C, C++, Java, SQL \\[2pt]
+\textbf{Web \& Backend:} FastAPI, MongoDB, PostgreSQL, Redis, REST APIs \\[2pt]
+\textbf{ML / AI:} TensorFlow, scikit-learn, Pandas, NumPy, pm4py \\[2pt]
 \textbf{Tools \& DevOps:} Git, GitHub, Docker, WebSockets, LangGraph, Streamlit
 }
 
-\vspace{2pt}
+\vspace{3pt}
 
 % ---------- PROJECTS ----------
 \section{PROJECTS}
@@ -196,6 +199,8 @@
 
 \resumeItemListEnd
 
+\vspace{3pt}
+
 % ---------- PROCESS MINING ----------
 \resumeProjectHeading
   {
@@ -215,10 +220,12 @@
   }
 
   \resumeItem{
-    Deployed an interactive \textbf{Streamlit} dashboard featuring Gantt timelines, Sankey flow diagrams, and what-if simulation panels; authored an executive action plan for operations leadership.
+    Deployed an interactive \textbf{Streamlit} dashboard featuring Gantt timelines, Sankey flow diagrams, and what-if simulation panels; delivered an executive action plan for operations leadership.
   }
 
 \resumeItemListEnd
+
+\vspace{3pt}
 
 % ---------- MULTI-AGENT ----------
 \resumeProjectHeading
@@ -267,6 +274,8 @@
     Completed a virtual job simulation on \textbf{data analytics}, performing data cleaning, exploratory analysis, and business insight derivation.
   }
 \resumeItemListEnd
+
+\vspace{2pt}
 
 \resumeProjectHeading
   {Generative AI Job Simulation --- Forage}{}
