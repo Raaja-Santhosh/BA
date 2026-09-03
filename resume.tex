@@ -24,19 +24,18 @@
 \usepackage[
   left=0.38in,
   right=0.38in,
-  top=0.28in,
-  bottom=0.28in
+  top=0.22in,
+  bottom=0.22in
 ]{geometry}
 
-% Perfectly dialed line-height for single page
-\linespread{1.02}
+\linespread{1.01}
 \urlstyle{same}
 \raggedbottom
 
 % ---------- SECTION FORMAT ----------
 \titleformat{\section}{
-  \vspace{0pt}\bfseries\raggedright\normalsize
-}{}{0em}{}[\color{black}\titlerule \vspace{2pt}]
+  \vspace{-2pt}\bfseries\raggedright\normalsize
+}{}{0em}{}[\color{black}\titlerule \vspace{1.5pt}]
 
 % ---------- RESUME COMMANDS ----------
 
@@ -48,29 +47,29 @@
   \begin{itemize}[
     leftmargin=0in,
     label={},
-    itemsep=2.5pt,
-    topsep=1pt,
+    itemsep=1.5pt,
+    topsep=0.5pt,
     parsep=0pt
   ]
 }
 
 \newcommand{\resumeOuterListEnd}{
-  \end{itemize}\vspace{-1pt}
+  \end{itemize}\vspace{-2pt}
 }
 
 \newcommand{\resumeItemListStart}{
   \begin{itemize}[
     leftmargin=0.15in,
     label=\tiny$\bullet$,
-    itemsep=1.5pt,
+    itemsep=1pt,
     parsep=0pt,
-    topsep=1.5pt,
+    topsep=1pt,
     partopsep=0pt
   ]
 }
 
 \newcommand{\resumeItemListEnd}{
-  \end{itemize}\vspace{-1pt}
+  \end{itemize}\vspace{-2pt}
 }
 
 \newcommand{\resumeSubheading}[4]{
@@ -108,7 +107,7 @@
     \faGithub \ \href{https://github.com/Raaja-Santhosh}{github.com/Raaja-Santhosh}
 \end{center}
 
-\vspace{-2pt}
+\vspace{-4pt}
 
 % ---------- EDUCATION ----------
 \section{EDUCATION}
@@ -124,8 +123,6 @@
     Relevant Coursework: Data Structures \& Algorithms, Object-Oriented Programming, Machine Learning, Database Management Systems, Computer Architecture, Operating Systems
   }
 \resumeItemListEnd
-
-\vspace{1pt}
 
 \resumeSubheading
   {Higher Secondary Education}{Tamil Nadu}
@@ -159,16 +156,15 @@
 % ---------- SKILLS ----------
 \section{SKILLS}
 
-\vspace{1pt}
+\vspace{0.5pt}
 
 \noindent\small{
-\textbf{Programming:} Python, C, C++, Java, SQL \\[1pt]
-\textbf{Web \& Backend:} FastAPI, MongoDB, PostgreSQL, Redis, REST APIs \\[1pt]
-\textbf{ML / AI:} TensorFlow, scikit-learn, Pandas, NumPy, pm4py \\[1pt]
+\textbf{Programming:} Python, C, C++, Java, SQL \quad$|$\quad \textbf{ML / AI:} TensorFlow, scikit-learn, Pandas, NumPy, pm4py \\
+\textbf{Web \& Backend:} FastAPI, MongoDB, PostgreSQL, Redis, REST APIs \\
 \textbf{Tools \& DevOps:} Git, GitHub, Docker, WebSockets, LangGraph, Streamlit
 }
 
-\vspace{1pt}
+\vspace{0.5pt}
 
 % ---------- PROJECTS ----------
 \section{PROJECTS}
@@ -199,8 +195,6 @@
 
 \resumeItemListEnd
 
-\vspace{1pt}
-
 % ---------- PROCESS MINING ----------
 \resumeProjectHeading
   {
@@ -224,8 +218,6 @@
   }
 
 \resumeItemListEnd
-
-\vspace{1pt}
 
 % ---------- MULTI-AGENT ----------
 \resumeProjectHeading
@@ -274,8 +266,6 @@
     Completed a virtual job simulation on \textbf{data analytics}, performing data cleaning, exploratory analysis, and business insight derivation.
   }
 \resumeItemListEnd
-
-\vspace{1pt}
 
 \resumeProjectHeading
   {Generative AI Job Simulation --- Forage}{}
