@@ -93,6 +93,34 @@ def run_simulation():
     print(f"Relative Cycle Time Reduction: {pct_reduction:.1f}%")
     
     # Save Metrics
+    # ---------------------------------------------------------
+    # SENSITIVITY ANALYSIS
+    # ---------------------------------------------------------
+    # The CI above only captures bootstrap sampling variance.
+    # A more honest question: what if the document gate only
+    # eliminates 50% or 75% of rework, not 100%?
+    sensitivity = {}
+    for pct_fix in [0.50, 0.75, 1.00]:
+        sens_avgs = []
+        for _ in range(n_iterations):
+            n_to_fix = int(len(messy_e2e) * pct_fix)
+            n_to_keep = len(messy_e2e) - n_to_fix
+            fixed_portion = np.random.choice(clean_e2e, size=n_to_fix, replace=True)
+            kept_portion = np.random.choice(messy_e2e, size=n_to_keep, replace=True)
+            simulated_scenario = np.concatenate([clean_e2e, fixed_portion, kept_portion])
+            sens_avgs.append(np.mean(simulated_scenario))
+        sens_projected = np.mean(sens_avgs)
+        sens_saved = current_avg - sens_projected
+        sens_pct = (sens_saved / current_avg) * 100
+        label = f"{int(pct_fix*100)}%"
+        sensitivity[label] = {
+            "rework_eliminated_pct": float(pct_fix * 100),
+            "projected_avg_days": round(float(sens_projected), 1),
+            "days_saved": round(float(sens_saved), 1),
+            "pct_reduction": round(float(sens_pct), 1)
+        }
+        print(f"  Sensitivity ({label} rework eliminated): Avg={sens_projected:.1f} days, Saved={sens_saved:.1f} days, Reduction={sens_pct:.1f}%")
+
     output_metrics = {
         "simulation": {
             "current_avg_days": float(current_avg),
@@ -102,7 +130,8 @@ def run_simulation():
             "absolute_days_saved_per_case": float(days_saved_avg),
             "days_saved_ci_lower": float(days_saved_ci_lower),
             "days_saved_ci_upper": float(days_saved_ci_upper),
-            "pct_reduction": float(pct_reduction)
+            "pct_reduction": float(pct_reduction),
+            "sensitivity": sensitivity
         }
     }
     

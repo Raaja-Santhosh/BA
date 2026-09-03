@@ -102,7 +102,27 @@
         "absolute_days_saved_per_case": 6.345470843575677,
         "days_saved_ci_lower": 6.244896774002672,
         "days_saved_ci_upper": 6.42918061020255,
-        "pct_reduction": 73.67504049593055
+        "pct_reduction": 73.67504049593055,
+        "sensitivity": {
+            "50%": {
+                "rework_eliminated_pct": 50.0,
+                "projected_avg_days": 5.4,
+                "days_saved": 3.2,
+                "pct_reduction": 36.9
+            },
+            "75%": {
+                "rework_eliminated_pct": 75.0,
+                "projected_avg_days": 3.9,
+                "days_saved": 4.8,
+                "pct_reduction": 55.2
+            },
+            "100%": {
+                "rework_eliminated_pct": 100.0,
+                "projected_avg_days": 2.3,
+                "days_saved": 6.3,
+                "pct_reduction": 73.7
+            }
+        }
     },
     "predictive_model": {
         "checkpoint": "Immediately after first Document Check",
